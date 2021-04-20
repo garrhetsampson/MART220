@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>first p5.js page!</title>
+        <script src="js/p5.min.js"></script>
+      
+        <script src="js/sketch.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://intridea.github.com/sketch.js/lib/sketch.min.js"></script>
+    </head>
+    <body>
+
+<canvas id="myCanvas" width="800" height="300"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.font = "150px Arial";
+ctx.strokeText("GS",20,200);
+    $('#myCanvas').sketch({
+      defaultColor: "#ff0000", 
+      defaultSize: 10
+    });
+</script>
+		
+    </body>
+</html>
